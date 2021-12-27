@@ -46,7 +46,7 @@
     {% block navigation %}
      <div class="navigation">
         <ol class="nav">
-          <li class="current"><a href="{{ SITEURL }}">Blog</a> </li>
+          <li class="current"><a href="{{ SITEURL }}">Posts</a></li>
           <li><a href="{{ SITEURL }}/archives.html">Archive</a></li>
           <li><a href="{{ SITEURL }}/tags.html">Tags</a> </li>
         </ol>
@@ -55,7 +55,6 @@
         <header id="banner" class="body">
                 <div class="banner"><a href="{{ SITEURL }}"><img alt="{{ SITENAME }}" src="/images/{{ SITEIMAGE }}"> </a></div>
         </header><!-- /#banner -->
-        <nav id="menu"><ul>
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
@@ -68,7 +67,6 @@
             <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
           {% endfor %}
         {% endif %}
-        </ul></nav><!-- /#menu -->
         <div class="box">
             {% block content %}
             {% endblock %}

@@ -96,8 +96,7 @@ h1.archive-entry-title,
 h1.archive-entry-title a{
 	font-family: 'Marcellus', serif; font-weight: normal;
     font-size: 40px; text-decoration: none;
-    /*margin: 15px 0 60px 0;
-	height: 0;*/
+    margin: 15px 0 60px 0; height: 0;
 }
 
 h1.archive-entry-title {
